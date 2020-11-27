@@ -1,0 +1,58 @@
+/* this loads a (web) font that works on all browsers, see https://fonts.google.com/ for more */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+html {
+  box-sizing: border-box;                /* this makes it easier to work with paddings */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;                             /* clear any pre-set margin */
+  font-family: 'Open Sans', sans-serif;  /* use the webfont we loaded earlier */
+}
+
+a {
+  color: inherit;                        /* don't use a special color for links */
+}
+
+#navigation {
+  float: left;                           /* we use this to make the #navigation and context show next to each other */
+  width: 30%;                            /* the navigation uses 30% of the space */
+  font-size: 12px;
+  padding-left: 65px;                    /* padding is how far the content of an element is inset */
+  padding-top: 86px;
+}
+
+#navigation p {                          /* this rule is for p elements inside the #navigation */
+  margin-bottom: 14px;                   /* margin is the amount of white space around elements */
+}
+
+#navigation a {
+  background-color: yellow;              /* give the links inside the #navigation a yellow background */
+  text-decoration: none;                 /* don't make them underlined by default */
+}
+
+#navigation a.selected {
+  text-decoration: underline;            /* but do underline them when the user has clicked this entry (.selected class gets added by JS) */
+}
+
+#content {
+  float: left;                           /* we use this to make the #navigation and context show next to each other */
+  width: 70%;                            /* the navigation uses 70% of the space */
+  height: 100vh;                         /* this makes us use the entire vertical height of the browser for this element */
+  padding: 16px;                         /* inset the content a bit */
+}
+
+#content iframe {                        /* iframes are used to display the p5.js sketches */
+  border: 0;                             /* remove the default border */
+  width: 100%;                           /* take up the entire width of the page */
+  height: calc(100vh - 32px - 76px);     /* and also the entire vertical height of the browser */
+  margin-top: 76px;                      /* nudge the top edge of the embedded page down a little though */
+}
+
+#content p {
+  text-overflow: ellipsis;               /* this breaks the text inside <p> after 72 characters */
+  max-width: 72ch;
+}
