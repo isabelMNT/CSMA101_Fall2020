@@ -1,10 +1,10 @@
 function setup() {
-  createCanvas(1000, 1000);
-// createLoop({
-    //  duration: 5,
-    //  gif: 
-   // {download: true
-   // }});
+  createCanvas(800, 800);
+  // createLoop({
+  //  duration: 5,
+  //  gif: 
+  // {download: true
+  // }});
   }
 
 
