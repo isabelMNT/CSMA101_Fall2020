@@ -1,58 +1,36 @@
-var centerX;
-var centerY;
-var speedX;
-var speedY;
+
+
+
 
 function setup() {
   createCanvas(800, 800);
-
-  centerX = 200;
-  centerY = 200;
-  speedX = 5;
-  speedY = 0;
-
+  
 
 }
 
 function draw() {
-  //  background('black');
-
-  speedY = speedY + 2;
-
-
-  for (var x = 0; x < 800; x = x + 10) {
-    for (var y = 0; y < 800; y = y + 10) {
-      if (centerY > 400) {
-        speedY = speedY * -0.96;
-      }
-
-      centerY = centerY + speedY;
-      centerX = centerX + speedX;
-
-
-      if (centerX > 800) {
-        centerX = -200;
-        ellipse(x, y, 4, 4, );
-      }
-    }
-
-
-
-
-
-
-    if (mouseX < 200) {
-      fill('red');
-    } else if (mouseX < 400) {
-      fill('blue');
-    } else if (mouseX < 600) {
-      fill('green');
-    } else {
-      fill('yellow');
-    }
-
-    ellipse(mouseX, mouseY, 50, 50);
-
-
+  
+  
+  if (mouseIsPressed) { 
+  
+  
+  var size;                                
+  size = random (0,50) + 10;              
+  fill(280,0, frameCount % 120) +5;
+ ellipse(mouseX, mouseY, size,size);
+    
+    
+  
+    
+        } else {                           
+ 
+  var size;                                
+  size = random (2,50) + 2;    
+ 
+  stroke(100, 100, 240);
+          fill(100,5, frameCount % 20) +100;
+   rect(mouseX, mouseY, size,size);
+    
+    
+        }
   }
-}
