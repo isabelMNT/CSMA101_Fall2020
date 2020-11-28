@@ -1,10 +1,5 @@
 function setup() {
   createCanvas(800, 800);
-  // createLoop({
-  //  duration: 5,
-  //  gif: 
-  // {download: true
-  // }});
   }
 
 
@@ -32,5 +27,5 @@ function setup() {
       }
 
     }
-    push(); // restore the drawing settings (so that changes between push and pop don't affect anything afterwards)
+    pop(); // restore the drawing settings (so that changes between push and pop don't affect anything afterwards)
   }
