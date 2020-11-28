@@ -21,7 +21,13 @@ function preload() {
 function setup() {
   createCanvas(800, 800);
 
-  image(img2, 0, 0, 800, 800);
+
+  
+}
+
+function draw() {
+  
+    image(img2, 0, 0, 800, 800);
   //image(img, 0, 0, 800, 800);
   //blendMode(REPLACE);
    
@@ -29,12 +35,14 @@ function setup() {
   image(img3, 350, 400, 50, 50);
   image(img4, 300, 300, 50, 50);
   image(img5, 300, 200, 50, 50);
-  
-  
 
-    
-    
-  let my_ip = "192.175.48.0/24";
+   if (mouseIsPressed) {
+    image(img1, 0, 0, 800, 800);
+     
+   }
+     
+     
+       let my_ip = "192.175.48.0/24";
   print("My IP is " + my_ip);
 
   for (let row = 0; row < ipAddress.getRowCount(); row++) {
@@ -53,22 +61,8 @@ function setup() {
     noStroke();
     circle(ip_coords.x / 10, ip_coords.y / 10, 10);
   }
-}
-
-function draw() {
-  
-    image(img2, 0, 0, 800, 800);
-  //image(img, 0, 0, 800, 800);
-  //blendMode(REPLACE);
+     
    
-  //blendMode(DARKEST);
-  image(img3, 350, 400, 50, 50);
-  image(img4, 300, 300, 50, 50);
-  image(img5, 300, 200, 50, 50);
-
-   if (mouseIsPressed) {
-    image(img1, 0, 0, 800, 800);
-   }
     
 }
 
