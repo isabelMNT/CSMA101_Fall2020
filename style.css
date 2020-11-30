@@ -31,8 +31,8 @@ a {
 }
 
 #navigation a {
-  background-color: yellow;              /* give the links inside the #navigation a yellow background */
-  text-decoration: none;                 /* don't make them underlined by default */
+  background-color: black;              /* give the links inside the #navigation a yellow background */
+  text-decoration: white;                 /* don't make them underlined by default */
 }
 
 #navigation a.selected {
