@@ -45,6 +45,7 @@ a {
   width: 70%;                            /* the navigation uses 70% of the space */
   height: 100vh;                         /* this makes us use the entire vertical height of the browser for this element */
   padding: 16px;                         /* inset the content a bit */
+  background-color: lightgray;
 }
 
 #content iframe {                        /* iframes are used to display the p5.js sketches */
