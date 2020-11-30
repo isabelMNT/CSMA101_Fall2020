@@ -5,3 +5,7 @@ html, body {
 canvas {
   display: block;
 }
+
+html {
+	font-family: monospace;
+}
