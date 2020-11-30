@@ -19,7 +19,7 @@ a {
 
 #navigation {
   float: left;                           /* we use this to make the #navigation and context show next to each other */
-  width: 30%;                            /* the navigation uses 30% of the space */
+  width: 20%;                            /* the navigation uses 30% of the space */
   font-size: 12px;
   padding-left: 65px;                    /* padding is how far the content of an element is inset */
   padding-top: 86px;
