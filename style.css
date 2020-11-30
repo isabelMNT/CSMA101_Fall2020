@@ -24,7 +24,6 @@ a {
   padding-left: 65px;                    /* padding is how far the content of an element is inset */
   padding-top: 86px;
   font-family: monospace;
-  background-color: black;
 }
 
 #navigation p {                          /* this rule is for p elements inside the #navigation */
@@ -33,7 +32,7 @@ a {
 
 #navigation a {
   background-color: none;              /* give the links inside the #navigation a yellow background */
-  text-decoration: white;                 /* don't make them underlined by default */
+  text-decoration: none;                 /* don't make them underlined by default */
 }
 
 #navigation a.selected {
