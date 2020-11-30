@@ -24,7 +24,7 @@ a {
   padding-left: 65px;                    /* padding is how far the content of an element is inset */
   padding-top: 86px;
   font-family: monospace;
-  background-color: rgb(0);
+  background-color: black;
 }
 
 #navigation p {                          /* this rule is for p elements inside the #navigation */
